@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa della Pasta</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <script src="./scrip.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p><a href="../main/index.html">La Casa della Pasta</a></p>
+        <h1>La esencia de Italia en cada bocado</h1>
+    </header>
+
+    <main>
+        <header>
+            <h1>Reserva</h1>
+            <p>Alla Casa della Pasta crediamo che il buon cibo nasca dal cuore. Ispirati alle trattorie italiane di una
+                volta, prepariamo ogni piatto con ingredienti freschi, ricette tradizionali e una passione che si sente
+                in ogni boccone.</p>
+            <p>Il nostro obiettivo è farti sentire come a casa — circondato da profumi, sorrisi e dal vero spirito
+                dell’Italia.</p>
+            <p>Via del Sapore 27, Firenze</p>
+        </header>
+
+        <article id="reserva-container">
+            <form id="reserva-form">
+                <h2>Haz tu reserva</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Tu apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tu mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.417417185846!2d11.25534891571964!3d43.77177497911844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5400b6c7f4a1%3A0xdda4e846ca22e6d0!2sVia%20del%20Sapore%2027%2C%20Firenze%2C%20Italia!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <section>
+            <p><a href="../main/index.html">Principal</a></p>
+            <p><a href="../menu/index.html">Menu</a></p>
+            <p><a href="../contacto/index.html">Contacto</a></p>
+            <p>Manuel Enrique Suárez Caldera</p>
+        </section>
+
+        <section>
+            <img src="./img/logo/youtube.png" alt="youtube">
+            <img src="./img/logo/twiter.png" alt="twiter">
+            <img src="./img/logo/instagram.png" alt="instagram">
+            <img src="./img/logo/facebook.png" alt="facebook">
+        </section>
+    </footer>
+</body>
+
+
+</html>

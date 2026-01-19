@@ -1,0 +1,206 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Aclonica", sans-serif;
+    
+}
+
+a{
+    all: unset;
+}
+
+body > header {
+    width: 100%;
+    height: 85%;
+    background-size: cover;
+    background-image: url(./img/comida/principal.png);
+    display: flex;
+    flex-direction: column;
+    color: #C2402E;
+    font-family: "Aclonica", sans-serif;
+    justify-content: space-between;
+}
+
+header p{
+    margin-left: 2%;
+}
+
+header h1{
+    margin-left: 2%;
+}
+
+main{
+    background-color: #643E2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main header section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main header section h2{
+    color: #C2402E;
+    font-size: 42px;
+}
+
+main header section h3{
+    color: #F3E5AB;
+    text-align: center;
+}
+
+main header nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+main header nav button{
+    width: 8%;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 18px;
+    background-color: #643E2B;
+    color: #F3E5AB;
+    border: solid 2px #F3E5AB;
+}
+
+button:hover{
+    background-color: #C2402E;
+    transition: 0.3s;
+}
+
+main header nav button.active {
+    background-color: #C2402E;
+    color: #F3E5AB;
+}
+
+
+main article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 2%;
+}
+
+main article section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    color: #F3E5AB;
+}
+
+main article section p{
+    margin: 0;
+    margin-top: 5px;
+}
+
+main article section img {
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;  
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+main footer {
+    width: 75%;
+    display: flex;
+}
+
+main footer section{
+    color: #F3E5AB;
+}
+
+main footer nav{
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+main footer nav p{
+    color: #F3E5AB;
+    font-size: 42px;
+    margin-left: 5%;
+    border-bottom: solid 2px #F3E5AB;
+}
+
+main footer nav p:hover{
+    color: #C2402E;
+    transition: 0.3s;
+    border-bottom: solid 2px #C2402E;
+}
+
+body > footer{
+    width: 100%;
+    height: 15%;
+    background-color: #7A8450;
+    color: #F3E5AB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body > footer > section{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+main article section img[alt="Profiteroles"],
+main article section img[alt="Sfogliatelle"],
+main article section img[alt="Cannoli"] {
+    width: 500px;        
+    height: 400px;       
+    object-fit: cover;   
+    border-radius: 10px;
+    display: block;
+}
+
+#aperitivos-footer nav p.selected {
+    color: #C2402E;
+    border-bottom: solid 2px #C2402E;
+}
+
+@media (max-width: 768px) {
+    main article {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main article section img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #aperitivos-footer section img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}   
