@@ -85,7 +85,7 @@ function cargarMenuCarousel(categoria) {
     const count = menu.length;
     menu.forEach(item => {
         const link = document.createElement('a');
-        link.href = '../Productos/index.html';
+        link.href = '../Productos/productos.html';
         const section = document.createElement('section');
         section.innerHTML = `<img src="${item.img}" alt="${item.nombre}"><p>${item.nombre}</p><p>${item.precio}</p>`;
         link.appendChild(section);
